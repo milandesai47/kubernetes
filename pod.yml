@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubernetes
+  labels:
+    name: kubernetes
+spec:
+  containers:
+    - name: kubernetes
+      image: desaimilan001/kubernetes:latest
+      resources:
+        limits:
+          memory: "256Mi"
+          cpu: "1024m"
+      ports:
+        - containerPort: 8080
