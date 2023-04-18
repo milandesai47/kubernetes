@@ -14,3 +14,11 @@ spec:
           cpu: "1024m"
       ports:
         - containerPort: 8080
+    # - name: kubernetes-2
+    #   image: desaimilan001/kubernetes:latest
+    #   resources:
+    #     limits:
+    #       memory: "256Mi"
+    #       cpu: "1024m"
+    #   ports:
+    #     - containerPort: 8080

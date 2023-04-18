@@ -37,3 +37,37 @@ syntax [{port-in-container}:{exposed-in-host}]
 ## Declarative approach
 
 use [pod.yml](/pod.yml)
+
+
+## Troubeshoot / Debugging
+```shell
+kubectl describe pod kubernetes
+kubectl get pod kubernetes -o yaml
+```
+
+### Logs
+For pod
+```shell
+kubectl logs kubernetes
+```
+For container in a pod
+```shell
+kubectl logs kubernetes -c kubernetes
+```
+
+### Exec into pod
+
+```shell
+kubectl exec -it kubernetes -- bash
+```
+
+
+```shell
+kubectl exec -it kubernetes -- sh
+```
+
+### Exec into container in pod
+
+```shell
+kubectl exec -it kubernetes -c kubernetes -- bash
+```
