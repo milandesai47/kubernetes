@@ -15,7 +15,11 @@ or better yet, use profiles.
 # Using minikube
 
 ## imperative approach
-
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+```shell
+minikube stop/start
+kubectl api-resources
+```
 * start the node
 ```shell
 minikube start --nodes=2
@@ -36,7 +40,14 @@ syntax [{port-in-container}:{exposed-in-host}]
 
 ## Declarative approach
 
-use [pod.yml](/pod.yml)
+use [pod.yml](/pod.yml) or [deployment.yml] (/deployment.yml)
+
+```shell
+kubectl apply -f deployment.yml
+```
+```shell
+kubectl delete -f deployment.yml
+```
 
 
 ## Troubeshoot / Debugging
