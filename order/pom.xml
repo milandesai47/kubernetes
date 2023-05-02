@@ -126,7 +126,7 @@
 							</from>
 							<container>
 								<ports>
-									<port>8080</port>
+									<port>8082</port>
 								</ports>
 								<format>OCI</format>
 							</container>
