@@ -2,13 +2,13 @@ package com.desai.order.order;
 
 public class Order {
     private int id;
-    private int productId;
-    private int cost;
+    private Integer productId;
+    private Integer quantity;
 
-    public Order(Integer id, Integer productId, Integer cost) {
+    public Order(Integer id, Integer productId, Integer quantity) {
         this.id = id;
         this.productId = productId;
-        this.cost = cost;
+        this.quantity = quantity;
     }
 
     public int getId() {
@@ -19,19 +19,19 @@ public class Order {
         this.id = id;
     }
 
-    public int getProductId() {
+    public Integer getProductId() {
         return productId;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(Integer productId) {
         this.productId = productId;
     }
 
-    public int getCost() {
-        return cost;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 }
