@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: order
 spec:
+  replicas: 2
   selector:
     matchLabels:
       app: order
@@ -13,7 +14,7 @@ spec:
     spec:
       containers:
       - name: order
-        image: <Image>
+        image: "desaimilan001/order.service"
         resources:
           limits:
             memory: "256Mi"

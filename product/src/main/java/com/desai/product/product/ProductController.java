@@ -12,13 +12,13 @@ import java.util.List;
 @RequestMapping("product")
 public class ProductController {
     private static final List<Product> PRODUCTS = Arrays.asList(
-            new Product(1, "productA", 1000),
-            new Product(2, "productB", 2000),
-            new Product(3, "productC", 3000)
+            new Product(1, "Apple", 1000),
+            new Product(2, "Banana", 2000),
+            new Product(3, "Orange", 3000)
     );
 
     @GetMapping(path = "/{productId}")
-    public Product getStudent(@PathVariable("productId") Integer productId){
+    public Product getProduct(@PathVariable("productId") Integer productId){
         return PRODUCTS.stream()
                 .filter(product -> productId.equals(product.getId()))
                 .findFirst()

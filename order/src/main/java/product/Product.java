@@ -1,4 +1,4 @@
-package com.desai.order.order;
+package product;
 
 public class Product {
     private int id;
