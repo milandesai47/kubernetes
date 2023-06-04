@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping("product")
+@RequestMapping("/order/product")
 public class ProductController {
 
     @Value("${product.service.host}")
