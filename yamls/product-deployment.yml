@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: product
+  template:
+    metadata:
+      labels:
+        app: product
+    spec:
+      containers:
+      - name: product
+        image: "desaimilan001/product.service"
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "1024m"
+        ports:
+        - containerPort: 8083

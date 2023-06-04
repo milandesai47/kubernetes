@@ -40,7 +40,7 @@ syntax [{port-in-container}:{exposed-in-host}]
 
 ## Declarative approach
 
-use [pod.yml](/pod.yml) or [deployment.yml] (/deployment.yml)
+use [pod.yml](/yamls/pod.yml) or [deployment.yml] (/deployment.yml)
 
 ```shell
 kubectl apply -f deployment.yml
