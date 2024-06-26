@@ -1,12 +1,16 @@
 package com.desai.order.order;
 
+import java.util.Date;
+
 public class Order {
     private int id;
+    private Date date;
     private Integer productId;
     private Integer quantity;
 
-    public Order(Integer id, Integer productId, Integer quantity) {
+    public Order(Integer id, Date date, Integer productId, Integer quantity) {
         this.id = id;
+        this.date = date;
         this.productId = productId;
         this.quantity = quantity;
     }
@@ -17,6 +21,14 @@ public class Order {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+   public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public Integer getProductId() {
