@@ -21,7 +21,6 @@ public class OrderController {
     @Value("${product.service.host}")
     private String productServiceHost;
 
-
     public OrderController(OrderService orderService) {
         this.orderService = orderService;
     }
