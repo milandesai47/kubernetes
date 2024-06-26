@@ -1,7 +1,13 @@
 package com.desai.order.order;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Order {
-    private int id;
+
+    @Id
+    private long id;
     private Integer productId;
     private Integer quantity;
 
@@ -11,11 +17,14 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public int getId() {
+    public Order() {
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
