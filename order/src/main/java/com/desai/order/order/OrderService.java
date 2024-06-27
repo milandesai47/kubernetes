@@ -11,6 +11,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
 
     //#TODO Order repository
+    //Static data for now
     private static final List<Order> ORDERS = Arrays.asList(
             new Order(1, 1, 1000),
             new Order(2, 2, 2000),
